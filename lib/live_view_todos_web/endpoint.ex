@@ -4,6 +4,10 @@ defmodule LiveViewTodosWeb.Endpoint do
   socket "/socket", LiveViewTodosWeb.UserSocket,
     websocket: true,
     longpoll: false
+  
+  #Expose a socket for LiveView to use in your endpoint module:
+  socket "/live", Phoenix.LiveView.Socket
+
 
   # Serve at "/" the static files from "priv/static" directory.
   #

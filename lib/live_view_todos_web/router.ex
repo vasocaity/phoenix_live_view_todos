@@ -6,6 +6,7 @@ defmodule LiveViewTodosWeb.Router do
     plug :fetch_session
     plug :fetch_flash
     plug :protect_from_forgery
+    plug Phoenix.LiveView.Flash
     plug :put_secure_browser_headers
   end
 
